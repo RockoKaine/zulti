@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Average&display=swap');
+
+* {
+    margin: 0;
+    border:0;
+    box-sizing: border-box;
+}
+
+$red: #e51d39;
+$yellow: #fee608;
+$blue: #0097c2;
+$white: #fafae3;
+$black: #262626;
+$big-font: 4rem;
+
+html, body {
+    background-color: $white;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Average', serif;
+    letter-spacing: 3px;;
+    color: $blue;
+    margin-left: 20px;
+}
+p { color: $black; font-family: 'Space Mono', monospace; padding: 15px;}
+
+@mixin flex($direction, $justify) {
+    display: flex;
+    justify-content: $justify;
+    // align-items: center;
+    flex-direction: $direction;
+}
+
+

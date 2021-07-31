@@ -1,0 +1,31 @@
+#header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 26px;
+    background-color: $red;
+    border-bottom: solid 6px $yellow;
+    width: 100%;
+    
+
+    #nav-logo {
+        background-image: url('../imgs/z-ultimate-logo.png');
+        height: 100px;
+        width: 100px;
+        background-size:auto 100px;
+        background-repeat: no-repeat;
+    }
+    #main-nav {
+        a {
+            text-decoration: none;
+            color: $yellow;
+            margin: 3px;
+            font-size: 1.26rem;
+            transition: all 0.75s ease;
+            &:hover {
+                color: $blue;
+                text-decoration: underline;
+            }
+        }
+    }
+}

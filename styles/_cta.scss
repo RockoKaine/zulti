@@ -1,0 +1,36 @@
+
+
+
+#call-to-action {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    height: 100vh;
+    width: 95%;
+    padding: 80px 50px;
+    background: url('../imgs/calltoaction2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+
+    h1{
+        color:$yellow;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    p {
+        color:$white;
+        font-size: 1.4rem;
+    }
+
+    #cta-left {
+        width: 45%;
+    }
+    #cta-right {
+        background:url('../imgs/map.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 45%;
+    }  
+
+}

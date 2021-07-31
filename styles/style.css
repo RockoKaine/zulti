@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Average&display=swap");
+* {
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  background-color: #fafae3;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Average', serif;
+  letter-spacing: 3px;
+  color: #0097c2;
+  margin-left: 20px;
+}
+
+p {
+  color: #262626;
+  font-family: 'Space Mono', monospace;
+  padding: 15px;
+}
+
+.main-section {
+  min-height: 100vh;
+  padding: 10px 50px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 10vh;
+  background: #3d3d3d;
+}
+
+#header-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 26px;
+  background-color: #e51d39;
+  border-bottom: solid 6px #fee608;
+  width: 100%;
+}
+
+#header-main #nav-logo {
+  background-image: url("../imgs/z-ultimate-logo.png");
+  height: 100px;
+  width: 100px;
+  background-size: auto 100px;
+  background-repeat: no-repeat;
+}
+
+#header-main #main-nav a {
+  text-decoration: none;
+  color: #fee608;
+  margin: 3px;
+  font-size: 1.26rem;
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+}
+
+#header-main #main-nav a:hover {
+  color: #0097c2;
+  text-decoration: underline;
+}
+
+#call-to-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px auto;
+  height: 100vh;
+  width: 95%;
+  padding: 80px 50px;
+  background: url("../imgs/calltoaction2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+}
+
+#call-to-action h1 {
+  color: #fee608;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#call-to-action p {
+  color: #fafae3;
+  font-size: 1.4rem;
+}
+
+#call-to-action #cta-left {
+  width: 45%;
+}
+
+#call-to-action #cta-right {
+  background: url("../imgs/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 45%;
+}
+
+#card-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background: none;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+/*# sourceMappingURL=style.css.map */
